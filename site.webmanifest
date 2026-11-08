@@ -1,0 +1,17 @@
+{
+  "name": "Retífica Maverick",
+  "short_name": "Maverick",
+  "description": "Retífica de motores, restauração de cabeçotes e solda em alumínio.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#050505",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
