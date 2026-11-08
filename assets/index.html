@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Retífica Maverick | Retífica de Motores e Restauração de Cabeçotes</title>
+<meta name="description" content="Retífica Maverick: retífica de motores, restauração de cabeçotes e solda em alumínio. Fale com o François no WhatsApp (83) 9.9851-4834 e trace a rota até a oficina.">
+<link rel="canonical" href="https://www.seudominio.com.br/">
+<meta name="theme-color" content="#050505">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Retífica Maverick | Restauradora de Cabeçotes">
+<meta property="og:description" content="Retífica de motores, restauração de cabeçotes e solda alumínio.">
+<meta property="og:url" content="https://www.seudominio.com.br/">
+<meta property="og:image" content="https://www.seudominio.com.br/assets/banner.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{preto:'#050505',carvao:'#141414',cromo:'#d3d7da',faisca:'#ffb400',brasa:'#ff5a1f',solda:'#2d6bff'},fontFamily:{titulo:['Anton','Impact','sans-serif'],corpo:['Barlow','system-ui','sans-serif']}}}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"AutoRepair","name":"Retífica Maverick","description":"Retífica de motores, restauração de cabeçotes e solda alumínio.","url":"https://www.seudominio.com.br/","telephone":"+55-83-99851-4834","image":"https://www.seudominio.com.br/assets/banner.webp","founder":{"@type":"Person","name":"François"},"address":{"@type":"PostalAddress","streetAddress":"Rua Exemplo, 123","addressLocality":"Sua Cidade","addressRegion":"PB","addressCountry":"BR"},"openingHours":"Mo-Fr 08:00-18:00"}
+</script>
+<style>
+html{scroll-behavior:smooth}
+body{font-family:Barlow,system-ui,sans-serif;background:#050505;color:#e8e8e8}
+.cromo{background:linear-gradient(180deg,#fff 0%,#d3d7da 42%,#5f656a 50%,#e8eaeb 68%,#9aa0a5 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 3px 0 #000)}
+.tela{min-height:100vh;min-height:100svh}
+#loader{transition:opacity .6s,visibility .6s}#loader.pronto{opacity:0;visibility:hidden}
+@keyframes girar{to{transform:rotate(360deg)}}.gear{animation:girar 3s linear infinite}
+.js .reveal{opacity:0;transform:translateY(36px) skewY(1.5deg);transition:opacity .7s,transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.js .reveal.visivel{opacity:1;transform:none}
+.faixa{background:repeating-linear-gradient(-45deg,#ffb400 0 14px,#050505 14px 28px)}
+.fade-b{-webkit-mask-image:linear-gradient(#000 70%,transparent);mask-image:linear-gradient(#000 70%,transparent)}
+.fade-l{-webkit-mask-image:linear-gradient(90deg,transparent,#000 25%);mask-image:linear-gradient(90deg,transparent,#000 25%)}
+.card{border-top:4px solid #ffb400;background:linear-gradient(#171717,#0c0c0c);transition:transform .3s,border-color .3s}
+.card:hover{transform:translateY(-6px);border-color:#ff5a1f}
+:focus-visible{outline:3px solid #ffb400;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.gear{animation:none}.js .reveal{opacity:1;transform:none;transition:none}}
+</style>
+<noscript><style>#loader{display:none!important}</style></noscript>
+</head>
+<body class="antialiased">
+<script>document.documentElement.classList.add('js')</script>
+
+<div id="loader" class="fixed inset-0 z-[100] bg-preto flex flex-col items-center justify-center gap-5" role="status" aria-live="polite">
+  <svg class="gear w-20 h-20 text-faisca" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M44 4h12l2 10a36 36 0 0 1 9 3.700l8.500-5.800 8.500 8.500-5.800 8.500A36 36 0 0 1 86 42l10 2v12l-10 2a36 36 0 0 1-3.700 9l5.800 8.500-8.500 8.500-8.500-5.800A36 36 0 0 1 58 86l-2 10H44l-2-10a36 36 0 0 1-9-3.700l-8.500 5.800-8.500-8.500 5.800-8.500A36 36 0 0 1 14 58L4 56V44l10-2a36 36 0 0 1 3.700-9l-5.800-8.500 8.500-8.500 8.500 5.800A36 36 0 0 1 42 14zM50 32a18 18 0 1 0 0 36 18 18 0 0 0 0-36z"/></svg>
+  <p class="cromo font-titulo text-5xl tracking-wide">MAVERICK</p>
+  <div class="w-64 h-2 bg-white/10 -skew-x-12 overflow-hidden"><div id="barra" class="h-full w-0 bg-gradient-to-r from-brasa to-faisca transition-all duration-300"></div></div>
+  <p id="pct" class="font-titulo text-xl text-faisca">0%</p>
+</div>
+
+<div class="fixed top-0 left-0 h-1 w-full z-50 pointer-events-none"><div id="progresso" class="h-full w-0 bg-gradient-to-r from-brasa to-faisca"></div></div>
+
+<header class="fixed top-0 inset-x-0 z-40 bg-preto/85 backdrop-blur border-b border-white/10">
+  <nav class="max-w-6xl mx-auto px-5 h-14 flex items-center justify-between" aria-label="Principal">
+    <a href="#inicio" class="font-titulo text-2xl cromo">MAVERICK</a>
+    <ul class="flex gap-5 text-sm font-semibold"><li><a class="hover:text-faisca" href="#servicos">Serviços</a></li><li><a class="hover:text-faisca" href="#localizacao">Como chegar</a></li></ul>
+  </nav>
+</header>
+
+<main>
+<!-- 1. RESUMO -->
+<section id="inicio" class="tela relative flex items-center overflow-hidden pt-14">
+  <canvas id="faiscas" class="absolute inset-0 w-full h-full" aria-hidden="true"></canvas>
+  <img id="parallax" src="assets/francois.webp" alt="François, retificador, segurando um cabeçote ao lado de um Maverick preto" width="992" height="864" class="hidden md:block absolute right-0 bottom-0 h-[78%] w-auto fade-l opacity-95 will-change-transform">
+  <div class="relative max-w-6xl mx-auto px-5 py-12 w-full">
+    <img src="assets/logo.webp" alt="Retífica Maverick, restauradora de cabeçotes" width="1504" height="592" class="reveal w-full max-w-xl mix-blend-screen" fetchpriority="high">
+    <h1 class="reveal font-titulo text-3xl sm:text-5xl mt-4 max-w-xl leading-tight text-white" style="--d:.1s">Retífica de motores e restauração de cabeçotes</h1>
+    <ul class="reveal mt-5 space-y-2 text-lg font-semibold" style="--d:.2s">
+      <li class="flex gap-3"><span class="text-faisca">&#10003;</span>Retífica de motores</li>
+      <li class="flex gap-3"><span class="text-faisca">&#10003;</span>Restauração de cabeçotes</li>
+      <li class="flex gap-3"><span class="text-faisca">&#10003;</span>Solda alumínio</li>
+    </ul>
+    <p class="reveal mt-5 max-w-md text-white/70" style="--d:.3s">Nome inspirado no Maverick, ícone dos anos 70, e a mesma pegada na oficina: peça medida, soldada e testada antes de voltar para o seu motor.</p>
+    <div class="reveal mt-7 flex flex-wrap gap-3" style="--d:.4s">
+      <a href="https://wa.me/5583998514834" target="_blank" rel="noopener" class="bg-faisca text-black font-bold px-7 py-3 -skew-x-6 hover:bg-brasa hover:text-white transition">Chamar no WhatsApp</a>
+      <a href="#localizacao" class="border-2 border-cromo px-7 py-3 -skew-x-6 font-bold hover:bg-cromo hover:text-black transition">Como chegar</a>
+    </div>
+  </div>
+</section>
+<div class="faixa h-3"></div>
+
+<!-- 2. SERVIÇOS -->
+<section id="servicos" class="tela flex items-center py-20 bg-carvao">
+  <div class="max-w-6xl mx-auto px-5 w-full">
+    <h2 class="reveal font-titulo text-5xl sm:text-7xl cromo">Serviços da oficina</h2>
+    <div class="mt-10 grid gap-6 md:grid-cols-3">
+      <article class="card reveal">
+        <div class="h-52 flex items-center justify-center bg-black"><svg class="gear w-32 h-32 text-cromo/80" style="animation-duration:10s" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M44 4h12l2 10a36 36 0 0 1 9 3.700l8.500-5.800 8.500 8.500-5.800 8.500A36 36 0 0 1 86 42l10 2v12l-10 2a36 36 0 0 1-3.700 9l5.800 8.500-8.500 8.500-8.500-5.800A36 36 0 0 1 58 86l-2 10H44l-2-10a36 36 0 0 1-9-3.700l-8.500 5.800-8.500-8.500 5.800-8.500A36 36 0 0 1 14 58L4 56V44l10-2a36 36 0 0 1 3.700-9l-5.800-8.500 8.500-8.500 8.500 5.800A36 36 0 0 1 42 14zM50 32a18 18 0 1 0 0 36 18 18 0 0 0 0-36z"/></svg></div>
+        <div class="p-6"><h3 class="font-titulo text-3xl text-faisca">Retífica de motores</h3><p class="mt-3 text-white/75">Medição, retífica e acerto de folgas do motor completo, para carros antigos e atuais.</p></div>
+      </article>
+      <article class="card reveal" style="--d:.12s">
+        <div class="h-52 bg-black overflow-hidden"><img src="assets/cabecote.webp" alt="Cabeçote de motor restaurado" width="920" height="580" loading="lazy" class="w-full h-full object-cover"></div>
+        <div class="p-6"><h3 class="font-titulo text-3xl text-faisca">Restauração de cabeçotes</h3><p class="mt-3 text-white/75">Especialidade da casa: recuperação de cabeçotes trincados ou desgastados, de volta ao padrão de fábrica.</p></div>
+      </article>
+      <article class="card reveal" style="--d:.24s">
+        <div class="h-52 bg-black overflow-hidden"><img src="assets/solda.webp" alt="Soldador trabalhando em um cabeçote de alumínio" width="640" height="640" loading="lazy" class="w-full h-full object-cover object-center"></div>
+        <div class="p-6"><h3 class="font-titulo text-3xl text-faisca">Solda alumínio</h3><p class="mt-3 text-white/75">Solda MIG e TIG em alumínio para reparar trincas em cabeçotes e outras peças do motor.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+<div class="faixa h-3"></div>
+
+<!-- 3. LOCALIZAÇÃO (edite o data-address) -->
+<section id="localizacao" class="tela flex flex-col pt-20 pb-6" data-address="Rua Exemplo, 123, Centro, Sua Cidade - PB">
+  <div class="max-w-6xl mx-auto px-5 w-full flex flex-col flex-1 gap-5">
+    <div class="reveal flex flex-wrap items-end justify-between gap-4">
+      <div>
+        <h2 class="font-titulo text-5xl sm:text-7xl cromo">Como chegar</h2>
+        <address class="not-italic mt-2 text-white/75">Rua Exemplo, 123, Centro, Sua Cidade - PB<br>Org.: François</address>
+      </div>
+      <a id="rota" href="#" target="_blank" rel="noopener" class="bg-faisca text-black font-bold px-7 py-3 -skew-x-6 hover:bg-brasa hover:text-white transition">Traçar rota no Google Maps</a>
+    </div>
+    <div class="reveal flex-1 min-h-[320px] border-4 border-faisca/80" style="--d:.15s">
+      <iframe id="mapa" title="Mapa com a localização da Retífica Maverick" class="w-full h-full min-h-[320px] border-0 grayscale contrast-125" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="bg-black border-t-4 border-faisca text-sm text-white/70">
+  <div class="max-w-6xl mx-auto px-5 py-8 flex flex-wrap items-center justify-between gap-4">
+    <div><p class="font-titulo text-2xl cromo">RETÍFICA MAVERICK</p><p>Restauradora de cabeçotes. Org.: François</p></div>
+    <p>WhatsApp: <a class="underline text-faisca" href="https://wa.me/5583998514834" rel="noopener">(83) 9.9851-4834</a></p>
+    <p>&copy; <span id="ano">2026</span> Retífica Maverick</p>
+  </div>
+</footer>
+<a href="https://wa.me/5583998514834" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp" class="fixed bottom-5 right-5 z-40 w-14 h-14 rounded-full bg-[#25d366] flex items-center justify-center shadow-lg shadow-black/60 hover:scale-110 transition"><svg viewBox="0 0 32 32" class="w-8 h-8" fill="#fff" aria-hidden="true"><path d="M16 3a13 13 0 0 0-11 19.800L3 29l6.400-2A13 13 0 1 0 16 3zm0 23.700c-2 0-3.900-.6-5.500-1.600l-.4-.2-3.800 1.200 1.200-3.700-.3-.4A10.700 10.700 0 1 1 16 26.700zm5.900-8c-.3-.2-1.900-.9-2.200-1-.3-.1-.5-.2-.7.200-.2.300-.8 1-1 1.200-.2.200-.4.200-.7.100-.3-.2-1.400-.5-2.600-1.600-1-.9-1.600-1.900-1.800-2.200-.2-.3 0-.5.100-.7l.5-.6c.2-.2.200-.3.300-.5.100-.2.100-.4 0-.6l-1-2.300c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.100-.9.400-.3.300-1.100 1.100-1.100 2.600s1.100 3 1.300 3.200c.2.200 2.200 3.400 5.400 4.700 3.200 1.300 3.200.9 3.800.8.600-.1 1.900-.8 2.200-1.500.3-.7.300-1.400.2-1.500-.1-.2-.3-.2-.6-.4z"/></svg></a>
+
+<script>
+(function(){
+var sec=document.getElementById('localizacao'),q=encodeURIComponent(sec.dataset.address);
+document.getElementById('rota').href='https://www.google.com/maps/dir/?api=1&destination='+q;
+document.getElementById('mapa').src='https://www.google.com/maps?q='+q+'&hl=pt-BR&z=16&output=embed';
+document.getElementById('ano').textContent=new Date().getFullYear();
+
+/* Loader */
+var barra=document.getElementById('barra'),pct=document.getElementById('pct'),total=0,feitos=0;
+function ok(){feitos++;var p=Math.round(feitos/total*100);barra.style.width=p+'%';pct.textContent=p+'%'}
+function esp(p){total++;return p.then(ok,ok)}
+var t=[];
+Array.prototype.forEach.call(document.images,function(i){i.loading='eager';if(!i.complete)t.push(esp(new Promise(function(r){i.onload=i.onerror=r})))});
+t.push(esp(document.fonts?document.fonts.ready:Promise.resolve()));
+t.push(esp(new Promise(function(r){document.readyState==='complete'?r():window.addEventListener('load',r)})));
+t.push(esp(new Promise(function(r){var m=document.getElementById('mapa');m.onload=m.onerror=r})));
+t.push(esp(new Promise(function(r){setTimeout(r,1000)})));
+Promise.race([Promise.all(t),new Promise(function(r){setTimeout(r,8000)})]).then(function(){
+  barra.style.width='100%';pct.textContent='100%';
+  setTimeout(function(){document.getElementById('loader').classList.add('pronto');revelar()},250)});
+
+/* Reveal */
+function revelar(){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visivel');io.unobserve(e.target)}})},{threshold:.15});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+}
+
+/* Scroll: progresso + parallax */
+var prog=document.getElementById('progresso'),par=document.getElementById('parallax'),tick=false,
+red=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function scroll(){var y=scrollY,m=document.documentElement.scrollHeight-innerHeight;
+  prog.style.width=(m>0?y/m*100:0)+'%';
+  if(!red&&par)par.style.transform='translateY('+(y*.18)+'px)';tick=false}
+addEventListener('scroll',function(){if(!tick){requestAnimationFrame(scroll);tick=true}},{passive:true});scroll();
+
+/* Faíscas (canvas) */
+var cv=document.getElementById('faiscas'),cx=cv.getContext('2d'),ps=[],vis=true,W,H;
+function tam(){W=cv.width=cv.offsetWidth;H=cv.height=cv.offsetHeight}
+tam();addEventListener('resize',tam);
+function nova(){return{x:Math.random()*W,y:H+10,vx:(Math.random()-.3)*1.5,vy:-(1+Math.random()*3),r:.8+Math.random()*1.8,l:1,c:Math.random()<.35?'255,180,0':'255,90,31'}}
+if(!red){
+  new IntersectionObserver(function(e){vis=e[0].isIntersecting}).observe(cv);
+  for(var i=0;i<70;i++){var p=nova();p.y=Math.random()*H;ps.push(p)}
+  (function loop(){requestAnimationFrame(loop);if(!vis)return;cx.clearRect(0,0,W,H);
+    ps.forEach(function(p,i){p.x+=p.vx+Math.sin(p.y/40)*.3;p.y+=p.vy;p.l-=.004;
+      if(p.l<=0||p.y<-10)ps[i]=nova();
+      cx.beginPath();cx.fillStyle='rgba('+p.c+','+Math.max(p.l,0)+')';cx.shadowColor='rgb('+p.c+')';cx.shadowBlur=8;
+      cx.arc(p.x,p.y,p.r,0,6.283);cx.fill()})})();
+}
+})();
+</script>
+</body>
+</html>
