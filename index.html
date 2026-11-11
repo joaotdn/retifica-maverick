@@ -18,16 +18,16 @@
 <meta property="og:title" content="Retífica Maverick | Retífica de motores e restauração de cabeçotes em Cajazeiras, PB">
 <meta property="og:description" content="Retífica de motores, restauração de cabeçotes e solda em alumínio em Cajazeiras, PB. Rua Francisco Aprigio Nogueira, 527, CEP 58.900-000, Brasil.">
 <meta property="og:url" content="https://www.retificamaverick.com.br/">
-<meta property="og:image" content="https://www.retificamaverick.com.br/assets/banner.webp">
-<meta property="og:image:secure_url" content="https://www.retificamaverick.com.br/assets/banner.webp">
+<meta property="og:image" content="https://www.retificamaverick.com.br/assets/og.jpg">
+<meta property="og:image:secure_url" content="https://www.retificamaverick.com.br/assets/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:type" content="image/webp">
+<meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:alt" content="Retífica Maverick - restauração de cabeçotes e retífica de motores em Cajazeiras, PB">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Retífica Maverick | Retífica de motores e restauração de cabeçotes em Cajazeiras, PB">
 <meta name="twitter:description" content="Retífica de motores, restauração de cabeçotes e solda em alumínio em Cajazeiras, PB. Rua Francisco Aprigio Nogueira, 527, CEP 58.900-000, Brasil.">
-<meta name="twitter:image" content="https://www.retificamaverick.com.br/assets/banner.webp">
+<meta name="twitter:image" content="https://www.retificamaverick.com.br/assets/og.jpg">
 <meta name="twitter:image:alt" content="Retífica Maverick - retífica de motores e restauração de cabeçotes em Cajazeiras, PB">
 <meta property="article:publisher" content="https://www.instagram.com/retificamaverick/">
 <link rel="me" href="https://www.instagram.com/retificamaverick/">
@@ -40,10 +40,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com/3.4.17"></script>
-<script>
-tailwind.config={theme:{extend:{colors:{preto:'#050505',carvao:'#141414',cromo:'#d3d7da',faisca:'#ffb400',brasa:'#ff5a1f',solda:'#2d6bff'},fontFamily:{titulo:['Anton','Impact','sans-serif'],corpo:['Barlow','system-ui','sans-serif']}}}}
-</script>
+<link rel="stylesheet" href="assets/tailwind.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -98,6 +95,13 @@ tailwind.config={theme:{extend:{colors:{preto:'#050505',carvao:'#141414',cromo:'
     }
   ]
 }
+</script>
+<script>
+var GA_ID='G-XXXXXXXXXX'; /* troque pelo ID de medição do GA4 */
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
+if(GA_ID.indexOf('XXXX')<0){var g=document.createElement('script');g.async=true;g.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(g);gtag('js',new Date());gtag('config',GA_ID)}
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+if(h.indexOf('wa.me')>-1)gtag('event','clique_whatsapp');else if(a.id==='rota')gtag('event','clique_rota');else if(h.indexOf('instagram.com')>-1)gtag('event','clique_instagram')});
 </script>
 <style>
 html{scroll-behavior:smooth}
@@ -272,9 +276,9 @@ document.addEventListener('DOMContentLoaded', function(){
 <!-- 1. RESUMO -->
 <section id="sobre" class="tela relative flex items-center overflow-hidden pt-14" aria-labelledby="titulo-principal">
   <canvas id="faiscas" class="absolute inset-0 w-full h-full" aria-hidden="true"></canvas>
-  <img id="parallax" src="assets/cois.png" alt="François, retificador, segurando um cabeçote ao lado de um Maverick preto" width="992" height="864" loading="lazy" class="hidden md:block absolute right-0 bottom-0 h-[78%] w-auto fade-l opacity-95 will-change-transform">
+  <img id="parallax" src="assets/cois.webp" alt="François, retificador, segurando um cabeçote ao lado de um Maverick preto" width="1006" height="888" loading="lazy" class="hidden md:block absolute right-0 bottom-0 h-[78%] w-auto fade-l opacity-95 will-change-transform">
   <div class="relative max-w-6xl mx-auto px-5 md:py-12 py-8 w-full">
-    <img src="assets/logo.png" alt="Retífica Maverick, restauradora de cabeçotes" width="1504" height="592" loading="eager" fetchpriority="high" class="reveal w-full max-w-xl mix-blend-screen">
+    <img src="assets/logo-maverick.webp" alt="Retífica Maverick, restauradora de cabeçotes" width="600" height="229" loading="eager" fetchpriority="high" class="reveal w-full max-w-xl mix-blend-screen">
     <h1 id="titulo-principal" class="reveal font-titulo text-3xl sm:text-5xl mt-4 max-w-xl leading-tight text-white" style="--d:.1s">Retífica de motores e restauração de cabeçotes</h1>
     <ul class="reveal mt-5 space-y-2 text-lg font-semibold" style="--d:.2s">
       <li class="flex gap-3"><span class="text-faisca">&#10003;</span>Retífica de motores</li>

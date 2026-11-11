@@ -1,0 +1,1 @@
+module.exports={content:['./index.html'],theme:{extend:{colors:{preto:'#050505',carvao:'#141414',cromo:'#d3d7da',faisca:'#ffb400',brasa:'#ff5a1f',solda:'#2d6bff'},fontFamily:{titulo:['Anton','Impact','sans-serif'],corpo:['Barlow','system-ui','sans-serif']}}}}
